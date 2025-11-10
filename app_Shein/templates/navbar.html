@@ -1,0 +1,27 @@
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="{% url 'index' %}" class="logo">SHEIN</a>
+        
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="{% url 'index' %}" class="nav-link">Inicio</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="#" class="nav-link">Usuarios</a>
+                <div class="dropdown-menu">
+                    <a href="{% url 'agregar_usuario' %}">Agregar Usuario</a>
+                    <a href="{% url 'ver_usuarios' %}">Ver Usuarios</a>
+                </div>
+            </li>
+            
+            <li class="nav-item">
+                <a href="#" class="nav-link">Productos</a>
+                <div class="dropdown-menu">
+                    <a href="{% url 'agregar_producto' %}">Agregar Producto</a>
+                    <a href="{% url 'ver_productos' %}">Ver Productos</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
